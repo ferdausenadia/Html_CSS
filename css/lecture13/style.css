@@ -1,0 +1,18 @@
+h1 {
+  font-size: small;
+  text-align: center;
+}
+p {
+  background-color: aquamarine;
+}
+.para {
+  color: red;
+}
+#para1 {
+  color: brown;
+  font-size: larger;
+}
+p,
+h1 {
+  width: 500px;
+}

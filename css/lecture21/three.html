@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid salmon;
+        background-color: bisque;
+        display: flex;
+      }
+      #boxleft {
+        background-color: rgb(74, 81, 81);
+        border: 5px solid darkblue;
+        width: 50%;
+      }
+      #boxright {
+        background-color: brown;
+        border: 5px solid darkblue;
+      }
+      p {
+        border: 1px solid darkorange;
+      }
+      @media (max-width: 640px) {
+        #boxleft {
+          width: 100%;
+        }
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="boxleft">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero
+          eaque at eveniet corporis soluta quasi animi accusantium obcaecati
+          pariatur repellendus autem excepturi, eius itaque quam maiores
+          nesciunt commodi eum. Placeat necessitatibus ad, facilis quaerat
+          dolore modi, similique dicta ex nam sint hic non fuga. Tempora debitis
+          quod aliquid. Enim.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          quibusdam animi quaerat ipsum ratione, officia iusto fuga laboriosam
+          voluptates, voluptatum necessitatibus, laborum incidunt quis possimus
+          delectus. Deleniti repellat ratione, eius aut exercitationem
+          dignissimos ea ab maxime laborum facere libero culpa. Autem impedit
+          nulla provident animi et nobis recusandae qui? Incidunt?
+        </p>
+      </div>
+      <div id="boxright">
+        <img src="../lecture17/download (1).jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

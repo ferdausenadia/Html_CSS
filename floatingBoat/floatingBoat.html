@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>floating Boat</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                background-image: url(images/background.jpg);
+                width: 100%;
+                height: 100vh;
+                position: relative;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center;
+            }
+            .ocean{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 220px;
+                left: 0;
+            }
+            .water{
+                height: 100%;
+                position: absolute;
+                right: 0;
+                animation: water 10s linear infinite;
+                
+            }
+            .boat{
+                width:350px;
+                position: absolute;
+                bottom: 200px;
+                left: 40%;
+                animation: boat 2s linear infinite;
+            }
+        @keyframes boat{
+            0%{
+                transform: rotate(0deg) translateY(0px);
+            }
+            25%{
+                transform: rotate(-3deg) translateY(-3px);
+            }
+            50%{
+                transform: rotate(0deg) translateY(-5px);
+            }
+            75%{
+                transform: rotate(3deg) translateY(-3px)
+            }
+            100%{
+                transform: rotate(0deg) translateY(0px)
+            }
+        }
+            .boat img{
+                width: 100%;
+                -webkit-box-reflect: below 0 linear-gradient(rgba(255, 255, 255, 0.1),rgba(255,255,255,0.6));
+            }
+            .cloud{
+                height: 250px;
+                position: absolute;
+                right: 0;
+                animation: cloud 10s linear infinite;
+            }
+            @keyframes cloud{
+                0%{
+                    transform: translatex(0);
+                }
+                100%{
+                    transform: translateX(500px);
+                }
+            }
+            @keyframes water{
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform:translatex(1000px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <img src="images/cloud.png" class="cloud">
+           <div class="ocean">
+               <img src="images/water.png" class="water" alt="">
+                <div class="boat">
+                    <img src="images/boat.png" alt="">
+                </div>
+            </div>
+
+       </div> 
+    </body>
+</html>

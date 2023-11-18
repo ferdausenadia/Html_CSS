@@ -1,0 +1,62 @@
+.para {
+    color: rgba(3, 250, 168, 0.877);
+}
+
+
+
+div.first{
+    opacity: 0.1;
+}
+div.second{
+    opacity: 0.3;
+}
+div.third{
+    opacity: 0.6;
+}
+section.bg{ 
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.LgINm4K9b8XkaXl9E_BmKAHaFj&pid=Api&P=0");
+}
+.hbg{
+    background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/09/All-White-HD-Background.png");
+}
+.repeatImg{
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.KAKcw6CUj1nAOsz6c4IJDwHaEK&pid=Api&P=0");
+    background-repeat: repeat-x;
+    height: 500px;
+}
+.repeatImgVer{
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.KAKcw6CUj1nAOsz6c4IJDwHaEK&pid=Api&P=0");
+    background-repeat: repeat-y;
+    height: 500px;
+}
+.NorepeatImg{
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.kHR0A5Nu_wEV6NWakKwwiAHaEK&pid=Api&P=0");
+    background-repeat: no-repeat;
+    height:500px;
+}
+
+.bgPosition{
+    background-image: url("https://tse4.explicit.bing.net/th?id=OIP.IGOD0Q5iWo6iNtBqTPsaCAHaEK&pid=Api&P=0");
+    background-repeat: no-repeat;
+    height:500px;
+    background-position: left top;
+}
+.bgAttachment{
+    height: 1000;
+}
+.bgFixed{
+    height: 500px;
+    background-image: url("https://tse4.explicit.bing.net/th?id=OIP.IGOD0Q5iWo6iNtBqTPsaCAHaEK&pid=Api&P=0");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.bgScroll{
+    
+    background-image: url("https://tse4.explicit.bing.net/th?id=OIP.IGOD0Q5iWo6iNtBqTPsaCAHaEK&pid=Api&P=0");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+
+}
+

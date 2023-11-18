@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: cadetblue;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        --primary-color: green;
+        background-color: bisque;
+        width: 400px;
+        height: 400px;
+        border: 1px solid tomato;
+        margin: 5px;
+        padding: 5px;
+        /*box-shadow: -10px -5px teal;
+        
+        box-shadow: inset 2px 4px red;
+        box-shadow: 20px 20px 40px 40px rgb(10, 15, 15);
+        */
+
+        box-shadow: 5px 10px red, 10px 15px var(--primary-color);
+      }
+      h2 {
+        text-shadow: 2px 3px 4px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="th.jpg" alt="" />
+        <h2>It Takes One Day</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          perferendis accusantium, autem facere neque reprehenderit,
+          perspiciatis assumenda, blanditiis aliquid expedita suscipit
+          architecto tempore soluta atque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

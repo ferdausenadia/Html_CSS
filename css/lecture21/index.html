@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      .container {
+        background-color: rgb(183, 181, 183);
+        border: 5px solid seagreen;
+        margin: 2px;
+        padding: 10px;
+        display: flex;
+      }
+      .box {
+        height: 400px;
+        width: 400px;
+        margin: 2px;
+        padding: 2px;
+
+        background-color: dodgerblue;
+        border: 3px solid tomato;
+      }
+
+      @media (min-width: 640px) {
+        .container {
+          background-color: black;
+          flex-direction: row;
+        }
+      }
+      @media (max-width: 640px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Media Query</div>
+      <div class="box">Media Query</div>
+      <div class="box">Media Query</div>
+      <div class="box">Media Query</div>
+    </div>
+  </body>
+</html>
